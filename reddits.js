@@ -11,8 +11,7 @@ var mydata=[];
         var average=[];
         var total=0;
         var numbers=0;
-        var lessThan=0;
-       
+        var lessThan=0; 
         for (var i = 0; i < mydata[0].data.children.length; i++) {
             Allpermalink.push(' '+mydata[0].data.children[i].data.subreddit);
             Prefixed.push(mydata[0].data.children[i].data.subreddit_name_prefixed);
@@ -26,7 +25,6 @@ var mydata=[];
             document.getElementById("subscriber").innerHTML = total;
           
         } 
-   
 
         for(var d = 0; d < average.length; d++){
           numbers+=average[d];
@@ -35,8 +33,6 @@ var mydata=[];
        var results= numbers/average.length;
        document.getElementById("averages").innerHTML = results;
 
-
-   
 const letterFrequencies = Prefixed
   .reduce((freqs, name) => Object
     .assign(freqs, { [name]: (freqs[name] || 0 ) + 1 }), {});
